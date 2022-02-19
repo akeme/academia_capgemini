@@ -9,9 +9,9 @@ def escada(tam):
     fim = tam + 1
     for i in range (1,tam):
         a = tam - i
-        print(a*' '+ i*'*')
+        print(a*' '+ i*'*') #  imprime a caracteres vazio, seguidos de i carecters *  
     
 
-
+## Chamada da função - o dado será pedido ao usuário
 aux = int(input( 'Digite a altura/base a sua escada= '))
 escada(aux)
