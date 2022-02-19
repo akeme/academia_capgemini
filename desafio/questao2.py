@@ -23,24 +23,26 @@ def senha_forte(senha):
 
 
     for a in senha:
+        #Checking for uppercase letter and
         if (a.isupper()) == True:
             count1= 1
 
-        # Checking for uppercase letter and
-        # converting to lowercase.
+        # Checking for lowercase letter and
+   
         elif (a.islower()) == True:
             count2= 1
             
-        # Checking for whitespace letter and
-        # adding it to the new string as it is.
+        # Checking for a numeric letter and
+  
         elif (a.isnumeric()) == True:
             count3= 1
 
-        
+        #checking for a special char
         elif (a.punctuation) == True:
             count4 = 1
 
     return 6 - (count1+ count2 + count3 + count4)
 
-print(senha_forte("Ya3"))
+a = input("Digite uma senha: ")
+print(senha_forte(a))
 		
