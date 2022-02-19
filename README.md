@@ -2,12 +2,13 @@
 
 Composto por 3 questões propostas
 
-**tecnologia utilizada:** Python 3
+**Tecnologia utilizada:** Python 3
 
-**Como executar:** 
-*Observação:* Deve ter o interpretador do Python instalado em sua máquina ou utilizar alguma ferramenta online
+## Como executar: 
+*Observação:* Deve ter o interpretador do Python instalado em sua máquina 
 
-1 - Utilizando o Prompt de Comandos (cmd) navega até a pasta desafio
+**Utilizando o Prompt de Comandos (cmd)** 
+1 - Navege até a pasta desafio
 2 - Digite: 
 ```
  python3 questao[numero da questão desejada].py
@@ -30,5 +31,7 @@ Utilizar alguma IDE para Pytho como,por exemplo:
 - VS Code
 em ambos o procedimento é o mesmo: abrir o arquivo da questão desejada e executar
 
+Utilizar alguma ferramenta online para Python 
+- Nesse caso, deve seguir as instruções da mesma
 
 Informações adicionais específicas de cada questão estão como comentários na mesma
