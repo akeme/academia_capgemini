@@ -5,7 +5,8 @@ Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pare
 são anagramas.
 '''
 
-from operator import sub
+
+from curses import init_pair
 
 
 def anagrama(palavra):
@@ -13,10 +14,10 @@ def anagrama(palavra):
     lista_substrings = substrings(palavra)
     for i in range(0,len(lista_substrings)):
         for j in range(1,len(lista_substrings)):
-            print(i,lista_substrings[i],j, lista_substrings[j])
-            if (i!=j):
+            #print(i,lista_substrings[i],j, lista_substrings[j])
+            if (i<j):
                 if lista_substrings[i] == lista_substrings[j] [::-1]:
-                    print(i,lista_substrings[i],j, lista_substrings[j] [::-1])
+                    #print(i,lista_substrings[i],j, lista_substrings[j] [::-1])
                     qtd +=1
     return qtd
     
@@ -32,5 +33,5 @@ def substrings(palavra):
     return aux
 
 
-
-print(anagrama("ifailuhkqq"))
+a =  input("digite a palavra a ser analisada: ")
+print(anagrama(a))
