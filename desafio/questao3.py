@@ -5,8 +5,10 @@ Dada uma string qualquer, desenvolva um algoritmo que encontre o número de pare
 são anagramas.
 '''
 
-
-from curses import init_pair
+# Função principal 
+# Compara as substrings para ver se existe uma substring reversa igual 
+# input: palavra - string
+# output: quantidade de "anagramas" - inteiro
 
 
 def anagrama(palavra):
@@ -23,6 +25,9 @@ def anagrama(palavra):
     
 
 
+## Função auxiliar - monta todas as substrings de uma palavra
+# Input: String 
+# Output: vetor de strings com todas as substrings da palavra
 
 def substrings(palavra):
     aux = []
@@ -33,5 +38,6 @@ def substrings(palavra):
     return aux
 
 
+# Chamada da função
 a =  input("digite a palavra a ser analisada: ")
 print(anagrama(a))

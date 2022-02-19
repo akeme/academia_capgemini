@@ -14,25 +14,27 @@ adicionados para uma string qualquer ser considerada segura.
 
 from curses.ascii import isupper
 
+# Input: senha - string
+# Output: how many chars must been add to be a strong password - int
 
 def senha_forte(senha):
-    count1 = 0
-    count2 = 0
-    count3 = 0
-    count4 = 0
-
+    count1 = 0 # Values> 0 or 1 : 0 dont have an uppercase letter - 1 one or more upppercase letter
+    count2 = 0 # Values> 0 or 1 : 0 dont have a lowercase letter - 1 one or more lowercase letter
+    count3 = 0 # Values> 0 or 1 : 0 dont have a numeric char - 1 one or more numeric char
+    count4 = 0 # Values> 0 or 1 : 0 dont have a special char - 1 one or more special char
+    passlen = 6 # Password length - given 
 
     for a in senha:
-        #Checking for uppercase letter and
+        #Checking for uppercase letter
         if (a.isupper()) == True:
             count1= 1
 
-        # Checking for lowercase letter and
+        # Checking for lowercase letter
    
         elif (a.islower()) == True:
             count2= 1
             
-        # Checking for a numeric letter and
+        # Checking for a numeric 
   
         elif (a.isnumeric()) == True:
             count3= 1
@@ -41,8 +43,9 @@ def senha_forte(senha):
         elif (a.punctuation) == True:
             count4 = 1
 
-    return 6 - (count1+ count2 + count3 + count4)
+    return passlen - (count1+ count2 + count3 + count4)
 
+#Asking for an user input 
 a = input("Digite uma senha: ")
 print(senha_forte(a))
 		

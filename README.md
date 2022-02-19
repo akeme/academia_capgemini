@@ -24,3 +24,4 @@ Alternativas:
 Utilizar o IDLE do próprio Python
 O VS Code, ambos é apenas abri o arquivo e executar
 
+Informações adicionais estão como comentários em cada questão
