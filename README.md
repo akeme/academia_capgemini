@@ -1,6 +1,7 @@
 # Desafio Academia Capgemini 2022
 
-Composto por 3 questões
+Composto por 3 questões propostas
+
 **tecnologia utilizada:** Python 3
 
 **Como executar:** 
@@ -22,8 +23,12 @@ python3 questao1.py
 
 Siga as instruções apresentadas no console
 
-Alternativas:
-Utilizar o IDLE do próprio Python
-O VS Code, ambos é apenas abri o arquivo e executar
+**Alternativas:**
+
+Utilizar alguma IDE para Pytho como,por exemplo:
+- IDLE do próprio Python
+- VS Code
+em ambos o procedimento é o mesmo: abrir o arquivo da questão desejada e executar
+
 
 Informações adicionais específicas de cada questão estão como comentários na mesma
